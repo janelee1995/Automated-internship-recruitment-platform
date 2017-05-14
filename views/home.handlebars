@@ -1,0 +1,158 @@
+<div class="jumbotron" id ="search_section">
+
+<div id ="no_results">
+  <p> No positions match the search criteria</p>
+</div>
+
+<div class="search_wrapper">
+<!--<form method="post" action="/submit_survey">
+  <button type="submit" id ="submit_register" class="btn btn-default">Submit</button>
+
+</form>-->
+
+<div class="row">
+
+    <div class="col-md-6">
+
+      <div class="dropdown" id ="float_left_dropdown">
+        <a class="btn btn-primary dropdown-toggle" id = "search_dropdown" type="button" data-toggle="dropdown">
+          <span id="selected">Position</span><span class="caret"></span></a>
+      <ul class="dropdown-menu" id ="menu1">
+
+      {{#each positions}}
+        <li><a href="#">{{title}}</a></li>
+      {{/each}}
+      </ul>
+
+    </div>
+    </div>
+
+
+<div class="col-md-6">
+    <div class="dropdown" id ="float_right_dropdown">
+      <a class="btn btn-primary dropdown-toggle" id = "search_dropdown" type="button" data-toggle="dropdown">
+        <span id="selected2">Location</span><span class="caret"></span></a>
+
+      <ul class="dropdown-menu"  id ="menu2">
+        {{#each locations}}
+        <li><a href="#">{{name}}</a></li>
+      {{/each}}
+      </ul>
+    </div>
+    </div>
+    </div>
+
+
+<!--<div class="row">
+    <div class="col-md-6">
+    <div class="dropdown" id ="float_left_dropdown">
+      <a class="btn btn-primary dropdown-toggle" id = "search_dropdown" type="button" data-toggle="dropdown">
+        <span id="selected3">Experience</span><span class="caret"></span></a>
+      <ul class="dropdown-menu"  id ="menu3">
+
+        <li><a href="#">1 Year</a></li>
+        <li><a href="#">2 Years</a></li>
+        <li><a href="#">3 Years</a></li>
+        <li><a href="#">4 Years</a></li>
+        <li><a href="#">5+ Years</a></li>
+
+      </ul>
+    </div>
+    </div>
+<div class="col-md-6">
+    <div class="dropdown" id ="float_right_dropdown">
+      <a class="btn btn-primary dropdown-toggle" id = "search_dropdown" type="button" data-toggle="dropdown">
+        <span id="selected4">Skills</span><span class="caret"></span></a>
+
+      <ul class="dropdown-menu" id ="menu4">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+-->
+</div>
+  <button class="btn btn-primary" id = "search_button" type="button" >Search
+</div>
+<!--<div id="steps">
+  <!-- steps must be on a single line to avoid unwanted whitespace
+  <div class='step complete'>Search</div><div class='step active'>Rank</div><div class='step'>Apply</div>
+</div>-->
+
+
+<div id = "search_results">
+
+
+                </div>
+
+
+                <div class="modal fade" id="positionApplied" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Apply for this position?</h4>
+                      </div>
+                      <div class="modal-body" id ="modal-body">
+
+                        <p class ="added">  Position applied </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="modal fade" id="confirmAppliedModal" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Apply for this position?</h4>
+                      </div>
+
+                      <div class="modal-body" id ="appliedModalBody">
+
+
+                      </div>
+                      <div class="modal-footer" id ="appliedModalFooter">
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <div class="modal fade" id="employer_profile_modal" role="dialog">
+                  <div class="modal-dialog" id ="modal-dialog-candidate" >
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                      <div id ="modalBodyEmployer">
+                      </div>
+                      <div id ="modalBodyEmployer2">
+                      </div>
+
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+                </div>

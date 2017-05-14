@@ -1,0 +1,273 @@
+
+<div class="jumbotron" id ="candidate_header">
+<!--<div class="profile_wrapper">
+<img id ="edit_icon" />
+<img id ="search_icon" />
+  <div class="profile">
+     <img class="img-circle" id ="profile_image" />
+     <h4>Jane Lee</h4>
+  </div>
+
+</div>-->
+<div class ="top_row_wrapper">
+
+
+<!--  <div class="row1">
+
+    {{#each user}}
+      <p>Name: {{firstName}} {{lastName}}
+      <p>Location: {{email}}
+      <p>Interests: {{email}}
+      <p>Email: {{email}}
+    {{/each}}
+
+  <div id = "images">
+  </div>
+  </div>
+</div>-->
+
+<div class="row">
+     <div class="col-xs-3" id = "profile_image_section">
+
+       <img id ="edit_icon"/>
+       <img id ="search_icon"/>
+         <div class="profile">
+            <img class="img" id ="profile_image" />
+            <h4>Jane Lee</h4>
+         </div>
+     </div>
+     <div class="col-xs-9">
+       <div class="row1">
+         {{#each user}}
+           <p>Name: {{firstName}} {{lastName}}
+           <p>Location: {{email}}
+           <p>Interests: {{email}}
+           <p>Email: {{email}}
+         {{/each}}
+       </div>
+       </div>
+    <!--  <iframe width="560" height="315" margin-top="200"; src= "https://www.youtube.com/embed/Mo_vRjtkgSI" frameborder="0" allowfullscreen></iframe>-->
+     </div>
+</div>
+</div>
+
+
+<div class="container-fluid" id ="images">
+  <div class="row">
+
+    {{#each images}}
+
+
+      <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{one}}">
+        </div>
+      </div>
+
+  <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{two}}">
+        </div>
+      </div>
+
+      <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{one}}">
+        </div>
+      </div>
+
+
+      <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{four}}">
+        </div>
+      </div>
+
+
+      <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{five}}">
+        </div>
+      </div>
+
+
+      <!-- column -->
+      <div class="col-xs-4 col-sm-5cols">
+        <div class="thumbnail">
+          <img src="{{six}}">
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      <div class="col-md-6" id ="video_content">
+      <iframe width="560" height="315"; src= "https://www.youtube.com/embed/Mo_vRjtkgSI" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+      <div class="row">
+           <div class="col-xs-6">
+             <div class ="row_wrapper">
+             <div id = "row_heading">
+               Experience
+             </div>
+
+             <div class="row">
+               {{#each user}}
+                 <p>Title:
+                 <p>Location:
+                 <p>Dates:
+                 <p>Description:
+               {{/each}}
+             </div>
+             </div>
+           </div>
+           <div class="col-xs-6">
+          <!--  <iframe width="560" height="315" margin-top="200"; src= "https://www.youtube.com/embed/Mo_vRjtkgSI" frameborder="0" allowfullscreen></iframe>-->
+           </div>
+      </div>
+
+
+
+      <!--   <div class="row" id = "second_row">
+          <div class="col-md-12" id = "experience">
+            <div class ="row_header">
+              Experiences
+            </div>
+           <div class="container">
+
+              <div class='row'>
+                <div class='col-md-12'>
+                  <div class="carousel slide media-carousel" id="media">
+                    <div class="carousel-inner">
+                      <div class="item  active">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                          <div class="col-md-4">
+                            <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                    <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            <!--  <div id="experience">
+                  <header class="row_header">
+                      <h4 class="section-title"><span>Education</span></h4>
+
+                  </header>
+                  <div class="row">
+                    {{#each user}}
+                    {{#each education}}
+                        <p><b>{{school}}</b></p>
+                        <p>{{location}}</p>
+                        <p>Degree:{{degree}}</p>
+                        <p>Start Date:{{start}}</p>
+                        <p>End Date:{{end}}</p>
+                        <p>Description:{{description}}</p>
+
+                      <div class="col-md-4">
+
+                          <article class="education">
+                              <header>
+                                  <h4>{{school}}</h3>
+                                  <p>{{degree}} - <strong>Graduated:</strong> {{end}}</p>
+                              </header>
+                                <p>{{description}}</p>
+                          </article>
+                      </div>
+
+                      {{/each}}
+                      {{/each}}
+                      <div class="col-md-4">
+                          <article class="education">
+                              <header>
+                                  <h4>Rhode Island School of Design</h4>
+                                  <p>Associates of Fine Arts - <strong>Graduated:</strong> 2002</p>
+                              </header>
+                              <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                          </article>
+                      </div>
+                      <div class="col-md-4">
+                          <article class="education">
+                              <header>
+                                  <h4>School of the Art Institute of Chicago</h3>
+                                  <p>Bachelor of Fine Arts - <strong>Graduated:</strong> 2004</p>
+                              </header>
+                              <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- education ends -->
+          <!-- experience begins -->
+
+
+
+
+<div class ="row_wrapper">
+    <div id = "row_heading">
+      Education
+    </div>
+
+    <div class="row">
+
+      {{#each user}}
+        <p>Title:
+        <p>Degree:
+        <p>Location:
+        <p>Dates:
+        <p>Result:
+        <p>Description:
+      {{/each}}
+
+    </div>
+</div>

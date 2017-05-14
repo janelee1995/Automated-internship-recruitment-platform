@@ -1,0 +1,24 @@
+{{login_layout}}
+<body id ="login_body">
+	<div id ="wrapper">
+{{#if message}}
+{{message}}
+{{/if}}
+<form method="post" action="/login"> <!--go to routes users /login-->
+	<div class="form-group">
+		<input type="text" class="form-control" name="username" placeholder="Username">
+	</div>
+	<div class="form-group">
+		<input type="password" class="form-control" name="password" placeholder="Password">
+	</div>
+
+
+	<a href="/register">
+		<button type="button" id ="register_button" class="btn btn-default">Register</button>
+  </a>
+	<button type="submit" id ="login_button" class="btn btn-default">Login</button>
+</form>
+<a href="#" class ="link" id ="login_link">Forgotten Password</a>
+
+</div>
+</body>

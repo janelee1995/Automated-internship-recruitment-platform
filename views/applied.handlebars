@@ -1,0 +1,28 @@
+<section id="page-education" class="page-education">
+
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title"><span>Applied Positions</span></h2>
+            <div class="spacer"></div>
+        </header>
+
+        {{#each position}}
+        {{#each applied}}
+        <div class="bs-callout bs-callout-danger"><div id ="crud_links"><i class="fa fa-pencil-square-o fa-2x" id ="{{degree}}+{{school}}+{{yearStart}}+{{yearEnd}}+{{location}}+{{description}}" aria-hidden="true"></i> <i class="fa fa-trash fa-2x" id ="{{_id}}" aria-hidden="true"></i></div>
+
+                          <h4>{{_id}}</h4>
+
+
+                       </div>
+
+              </div>
+              {{/each}}
+              {{/each}}
+
+
+</section>
+
+
+for(i = 0; i < data.results.length; i++){
+var html ="<div class='col-md-12'><div class='bs-callout bs-callout-danger' id ='divOne'><h4 id ='h4'>"+data.results[i].companyname+"</h4><h4 id ='h4'>" +data.results[i].position.title+"</h4><p id ='location'>" +data.results[i].position.location+"<p><strong>Start:</strong> <text id ='start'>" +data.results[i].position.start+"</text> / <strong>Term: </strong> <text id ='term'>" +data.results[i].position.term+"</text> months</p><p id ='description'>" +data.results[i].position.description+"</p><button type='button'  id ='apply' class="
++data.results[i].position._id +'+'+data.results[i]._id+ ">Apply</button></div>"

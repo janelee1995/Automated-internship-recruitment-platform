@@ -1,0 +1,176 @@
+<div class="jumbotron" id ="register">
+
+
+
+  <div id = "radio_buttons">
+  <label class="radio-inline"><input class ="radio_buttons" type="radio" value="candidate" checked name="gender">Candidate</label>
+  <label class="radio-inline"><input class ="radio_buttons" type="radio" value="employer" name="gender">Employer</label>
+  </div>
+
+<div id ="candidate_reg_form" class = "registration_form">
+<h2 class="page-header">Register As Candidate</h2>
+{{#if errors}}
+{{#each errors}}
+	<div class="alert alert-danger">
+		{{msg}}
+	</div>
+{{/each}}
+{{/if}}
+<form method="post" action="/register_candidate">
+  <div class="row">
+     <div class="col-sm-6">
+<div class="form-group">
+	<label>Name*</label>
+	<input required type="text" class="form-control" placeholder="Name" name="name">
+</div>
+<div class="form-group">
+	<label>Username*</label>
+	<input required type="text" class="form-control" placeholder="Username" id ="username" name="username">
+</div>
+<div class="form-group">
+	<label>Email*</label>
+	<input required type="email" class="form-control" placeholder="Email" name="email">
+</div>
+<div class="form-group">
+	<label>Password*</label>
+	<input required type="password" class="form-control" placeholder="Password" name="password">
+</div>
+<div class="form-group">
+	<label>Confirm Password*</label>
+	<input required type="password" class="form-control" placeholder="Password" name="password2">
+</div>
+<div class="form-group">
+  <label for="bio">Location:</label>
+  <input type="text" class="form-control" placeholder="Current location" id ="location" name="location">
+</div>
+</div>
+     <div class="col-sm-6">
+<div class="form-group">
+	<label>Profle Photo</label>
+	<input type="text" class="form-control" placeholder="Image URL" name="profile_image">
+</div>
+<div class="form-group">
+	<label>Video Upload</label>
+	<input type="text" class="form-control" placeholder="Video URL" name="video">
+</div>
+
+<div class="form-group">
+	<label>Facebook</label>
+	<input type="text" class="form-control" placeholder="www.facebook.com/..." name="Facebook"></input>
+</div>
+<div class="form-group">
+	<label>Twitter</label>
+	<input type="text" class="form-control" placeholder="www.twitter.com/..." name="Twitter">
+</div>
+<div class="form-group">
+	<label>LinkedIn</label>
+	<input type="text" class="form-control" placeholder="www.linkedin.com/in/..." name="LinkedIn">
+</div>
+<div class="form-group">
+	<label>Instagram</label>
+	<input type="text" class="form-control" placeholder="www.instagram.com/" name="Instagram">
+</div>
+<div class="form-group">
+	<label>Google</label>
+	<input type="text" class="form-control" placeholder="www.plus.google.com/+..." name="Google">
+</div>
+
+<div class="form-group">
+  <label for="bio">Technical Skills:</label>
+  <input type="number" min="0" max="100" class="form-control" placeholder="Overall percentage from previous years" id ="technical_skills" name="technical_skills">
+</div>
+<div class="form-group">
+  <label for="bio">Bio:</label>
+  <textarea class="form-control" rows="5" name = "biodescription" id="biodescription"></textarea>
+</div>
+</div>
+</div>
+
+
+<button type="submit" id ="submit_register" class="btn btn-default">Submit</button>
+</form>
+</div>
+
+<div id ="employer_reg_form" class = "registration_form">
+<h2 class="page-header">Register As Employer</h2>
+{{#if errors}}
+{{#each errors}}
+	<div class="alert alert-danger">
+		{{msg}}
+	</div>
+{{/each}}
+{{/if}}
+<form method="post" action="/register_employer">
+    <div class="row">
+     <div class="col-sm-6">
+<div class="form-group">
+	<label>Company Name*</label>
+	<input required type="text" class="form-control" placeholder="Name" name="companyname">
+</div>
+
+<div class="form-group">
+	<label>Username*</label>
+	<input required type="text" class="form-control" placeholder="Username" id ="username" name="username">
+</div>
+<div class="form-group">
+	<label>Email*</label>
+	<input required type="email" class="form-control" placeholder="Email" name="email">
+</div>
+<div class="form-group">
+	<label>Password*</label>
+	<input required type="password" class="form-control" placeholder="Password" name="password">
+</div>
+<div class="form-group">
+	<label>Confirm Password*</label>
+	<input required type="password" class="form-control" placeholder="Password" name="password2">
+</div>
+
+<div class="form-group">
+	<label>Location*</label>
+	<input required type="text" class="form-control" placeholder="Location" name="location">
+</div>
+<div class="form-group">
+	<label>Profile Photo URL*</label>
+	<input required type="text" class="form-control" placeholder="Profile Photo URL" name="profile_image">
+</div>
+<div class="form-group">
+	<label>Video URL*</label>
+	<input required type="text" class="form-control" placeholder="Video URL" name="vurl">
+</div>
+</div>
+   <div class="col-sm-6">
+<div class="form-group">
+	<label>Number of employees</label>
+	<input type="number" class="form-control" placeholder="Numbee of employees" name="employees">
+</div>
+<div class="form-group">
+	<label>Facebook</label>
+	<input type="text" class="form-control" placeholder="Facebook Link" name="Facebook">
+</div>
+<div class="form-group">
+	<label>Twitter</label>
+	<input type="text" class="form-control" placeholder="Twitter Link" name="Twitter">
+</div>
+<div class="form-group">
+	<label>LinkedIn</label>
+	<input type="text" class="form-control" placeholder="LinkedIn Link" name="LinkedIn">
+</div>
+<div class="form-group">
+	<label>Instagram</label>
+	<input type="text" class="form-control" placeholder="Instagram Link" name="Instagram">
+</div>
+<div class="form-group">
+	<label>Google</label>
+	<input type="text" class="form-control" placeholder="Google Link" name="Google">
+</div>
+<div class="form-group">
+  <label for="bio">Bio:</label>
+  <textarea class="form-control" rows="5" name = "biodescription" id="biodescription"></textarea>
+</div>
+</div>
+
+
+<button type="submit" id ="submit_register" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>

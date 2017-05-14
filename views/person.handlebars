@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var source = $("#first-template").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                title1 : "hello",
+                body1 : "body1"
+            };
+
+            var el_html = template(context);
+
+            $("#render_here").html(el_html);
+            $("#render_here_again").html(el_html);
+
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+</head>
+<body>
+
+<button name = "click" id ="click" >click </button>
+<div id ="render_here">
+    first
+</div>
+
+<div id ="render_here_again">
+    second
+</div>
+
+<script id = "first-template" type="text/x-handlebars-template">
+    <div>
+        <h1 style ="color:green">{{title1}}</h1>
+        <h2 style ="color:blue">{{body1}}</h2>
+    </div>
+</script>
+
+</body>
+</html>

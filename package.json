@@ -1,0 +1,39 @@
+{
+  "name": "intern",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.4.0",
+    "bcrypt-nodejs": "*",
+    "body-parser": "^1.15.2",
+    "child-process": "^1.0.2",
+    "client-sessions": "^0.7.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "~1.0.4",
+    "find-in-files": "^0.4.0",
+    "fs": "0.0.1-security",
+    "handlebars": "*",
+    "line-by-line": "^0.1.5",
+    "mongoose": "~3.8.18",
+    "morgan": "~1.7.0",
+    "passport": "~0.2.0",
+    "passport-local": "~1.0.0",
+    "permission": "^1.0.4",
+    "python-shell": "^0.4.0",
+    "serve-favicon": "~2.3.0",
+    "session": "^0.1.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
